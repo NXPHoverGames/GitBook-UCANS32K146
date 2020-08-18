@@ -19,6 +19,6 @@
 
 * [Getting started](technical-guide/untitled.md)
 * [Schematics](technical-guide/schematics/README.md)
-  * [V1 Schematics UCANS32K146](technical-guide/schematics/v1-schematics-ucans32k146.md)
-  * [V2 Schematics UCANS32K146](technical-guide/schematics/v2-schematics-ucans32k146.md)
+  * [Production Schematics UCANS32K146-01](technical-guide/schematics/production-schematics-ucans32k146-01.md)
+  * [Prototype Schematics UCANS32K146](technical-guide/schematics/prototype-schematics-ucans32k146.md)
 
