@@ -1,6 +1,10 @@
+---
+description: >-
+  This GitBook provides the technical details of the NXP RDDRONE-UCANS32K146
+  UAVCAN node development board, as well as reference software and examples.
+---
+
 # RDDRONE-UCANS32K146
-
-
 
 {% hint style="warning" %}
 **This GitBook is still a work in progress!**
@@ -44,10 +48,6 @@ Some possible use cases are:
 ![UCANS32K146 V2 - Bottom \(Production\)](.gitbook/assets/pic11.jpg)
 
 ![UCANS32K146 V1 \(Engineering samples\)](.gitbook/assets/05433ff4-f06f-454c-be27-e4d43a5b4c15_1_105_c.jpeg)
-
-## How to navigate this GitBook
-
-This Gitbook should be read in the order based on the sections on the left.
 
 ## Contribute to this GitBook
 
