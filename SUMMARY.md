@@ -1,6 +1,6 @@
 # Table of contents
 
-* [UCANS32K146](README.md)
+* [RDDRONE-UCANS32K146](README.md)
 * [Disclaimer](disclaimer.md)
 
 ## User Guide

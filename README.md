@@ -1,4 +1,6 @@
-# UCANS32K146
+# RDDRONE-UCANS32K146
+
+
 
 {% hint style="warning" %}
 **This GitBook is still a work in progress!**
@@ -46,4 +48,8 @@ Some possible use cases are:
 ## How to navigate this GitBook
 
 This Gitbook should be read in the order based on the sections on the left.
+
+## Contribute to this GitBook
+
+We would really like to receive your feedback regarding this GitBook. It is synchronized to a [Git repository on GitHub](https://github.com/NXPHoverGames/GitBook-UCANS32K146), so you can just open an issue. If you want to contribute you can also open a pull request. The pages are written using an extended version of [Markdown](https://www.markdownguide.org/), so it should be pretty straightforward to add sections or even complete pages!
 
