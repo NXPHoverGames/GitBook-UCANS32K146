@@ -28,13 +28,11 @@ The name UAVCAN stands for Uncomplicated Application-level Vehicular Communicati
 
 CAN driver compatible with SocketCAN API, takes benefit of POSIX socket API for painless and portable CAN application development."
 
-## SLCAN -CAN over Serial 
+## SLCAN - CAN over Serial 
 
 This software interface supports debugging UAVCAN and CAN on PC reusing an UCANS32K board reprogrammed as a debugger.
 
 ## OTHERS 
 
 &lt;Please add them with a short note and link to appropriate website. Point to repo if it is something we are providing&gt;
-
-
 
