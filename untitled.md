@@ -2,15 +2,17 @@
 
 ## UCANS32K146 overview
 
-![UCANS32K146 Board](.gitbook/assets/05433ff4-f06f-454c-be27-e4d43a5b4c15_1_105_c.jpeg)
+![RDDRONE-UCANS32K146 front view](.gitbook/assets/ucans32k146_front.png)
+
+![RDDRONE-UCANS32K146 back view](.gitbook/assets/ucans32k146_back.png)
 
 ## Powering the board
 
-There are two options when powering the UCANS32K146. The first option is to connect 5V power to the header pins on the board.
+There are two options when powering the UCANS32K146. The first option is to connect 5V power to the power pins on the board.
 
-![UCANS32K146 V1 Powered through a modified USB cable on the V5 and GND pins](.gitbook/assets/img_2496.jpeg)
+![UCANS32K146 \(early version\) powered through a modified USB cable on the V5 and GND pins](.gitbook/assets/img_2496.jpeg)
 
-![UCANS32K146 V2 Note location of 5V PWR IN and polarity](.gitbook/assets/image%20%2815%29.png)
+![UCANS32K146 note location of 5V PWR IN and polarity](.gitbook/assets/image%20%2815%29.png)
 
 {% hint style="info" %}
 Note: The 5V power header is labeled V5.
