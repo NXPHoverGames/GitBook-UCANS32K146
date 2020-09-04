@@ -2,12 +2,8 @@
 
 * [RDDRONE-UCANS32K146](README.md)
 * [Disclaimer](disclaimer.md)
-
-## User Guide
-
-* [Getting started](user-guide/untitled.md)
-* [Quick Start Demo](user-guide/quick-start-demo.md)
-* [Supported Software Overview](user-guide/supported-software-overview.md)
+* [Getting started](untitled.md)
+* [Supported software overview](supported-software-overview.md)
 
 ## Hardware Reference <a id="hardware"></a>
 
@@ -15,7 +11,8 @@
 
 ## S32K1 SDK
 
-* [SDK example with UAVCAN](s32k1-sdk/sdk-example-with-uavcan.md)
+* [S32K1 SDK with libuavcan](s32k1-sdk/sdk-example-with-uavcan.md)
+* [UAVCAN quick start demo](s32k1-sdk/quick-start-demo.md)
 
 ## Apache NuttX
 

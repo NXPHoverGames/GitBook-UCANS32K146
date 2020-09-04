@@ -1,4 +1,4 @@
-# SDK example with UAVCAN
+# S32K1 SDK with libuavcan
 
 ## S32 Design Studio and S32K1 SDK
 
