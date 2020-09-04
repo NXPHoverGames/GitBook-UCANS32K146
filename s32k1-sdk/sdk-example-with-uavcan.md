@@ -6,6 +6,10 @@
 
 ## Application Note AN12842
 
+{% hint style="info" %}
+It might take a while for the embedded PDF file to load. [The file is also available on NXP.com.](https://www.nxp.com/docs/en/application-note/AN12842.pdf)
+{% endhint %}
+
 {% embed url="https://www.nxp.com/docs/en/application-note/AN12842.pdf" %}
 
 
