@@ -14,7 +14,7 @@ Schematics for the production version UCANS32K146 are published on NXP.com at th
 
 ## Prototype Schematics UCANS32K146
 
-Prototype pre-release hardware schematics and board layout.
+Prototype pre-release hardware schematics, board layout and bill-of-materials.
 
 {% hint style="warning" %}
 Note that these files are for the prototype version of the board. They are included here only for convenience to the small number of developers that may have this prototype board.
@@ -22,7 +22,5 @@ Note that these files are for the prototype version of the board. They are inclu
 
 {% file src="../.gitbook/assets/20191104\_sch\_lid2438\_final.pdf" caption="UCANS32K146 Schematics November 2019" %}
 
-{% file src="../.gitbook/assets/20191105\_sch\_bom\_pcb3d.pdf" caption="UCANS32K146 SCH and BRD Layout November 2019" %}
-
-
+{% file src="../.gitbook/assets/20191105\_sch\_bom\_pcb3d.pdf" caption="UCANS32K146 SCH, PCB & BOM November 2019" %}
 
