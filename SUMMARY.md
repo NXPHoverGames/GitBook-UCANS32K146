@@ -8,30 +8,36 @@
 * [Getting started](user-guide/untitled.md)
 * [Quick Start Demo](user-guide/quick-start-demo.md)
 * [Supported Software Overview](user-guide/supported-software-overview.md)
-* [SLCAN](user-guide/slcan.md)
 
-## PX4 and UAVCAN
+## Hardware Reference <a id="hardware"></a>
 
-* [Building the PX4 Firmware](px4-and-uavcan/building-the-px4-firmware.md)
-* [Flashing PX4 Firmware](px4-and-uavcan/px4-toolchain-and-flashing-the-board.md)
+* [Schematics and designs](hardware/designs.md)
 
-## NuttX and UAVCAN
+## S32K1 SDK
 
-* [Untitled](nuttx-and-uavcan/untitled.md)
+* [SDK example with UAVCAN](s32k1-sdk/sdk-example-with-uavcan.md)
 
-## Technical Guide
+## Apache NuttX
 
-* [Getting started](technical-guide/untitled.md)
-* [Schematics](technical-guide/schematics/README.md)
-  * [Production Schematics UCANS32K146-01](technical-guide/schematics/production-schematics-ucans32k146-01.md)
-  * [Prototype Schematics UCANS32K146](technical-guide/schematics/prototype-schematics-ucans32k146.md)
+* [About NuttX](apache-nuttx/untitled.md)
+* [Download NuttX](apache-nuttx/download-nuttx.md)
+* [Building and flashing NuttX](apache-nuttx/building-and-flashing-nuttx.md)
+* [NuttX configuration](apache-nuttx/nuttx-configuration.md)
+* [SocketCAN](apache-nuttx/socketcan.md)
+* [SLCAN](apache-nuttx/slcan.md)
+
+## PX4 Autopilot
+
+* [About PX4](px4-autopilot/about-px4.md)
+* [Building the PX4 firmware](px4-autopilot/building-the-px4-firmware.md)
+* [Flashing PX4 firmware](px4-autopilot/px4-toolchain-and-flashing-the-board.md)
 
 ## External Sources
 
 * [UAVCAN](https://uavcan.org/)
+* [Apache NuttX](https://nuttx.apache.org/)
+* [Apache NuttX GitHub](https://github.com/apache/incubator-nuttx)
 * [PX4 User Guide](https://docs.px4.io/master/en/)
 * [PX4 Development Guide](https://dev.px4.io/master/en/index.html)
 * [PX4 GitHub](https://github.com/PX4/Firmware)
-* [Apache NuttX](https://nuttx.apache.org/)
-* [Apache NuttX GitHub](https://github.com/apache/incubator-nuttx)
 

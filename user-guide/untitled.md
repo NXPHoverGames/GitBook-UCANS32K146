@@ -1,6 +1,6 @@
 # Getting started
 
-## UCANS32K146 Overview
+## UCANS32K146 overview
 
 ![UCANS32K146 Board](../.gitbook/assets/05433ff4-f06f-454c-be27-e4d43a5b4c15_1_105_c.jpeg)
 

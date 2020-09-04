@@ -4,13 +4,13 @@ description: UCANS32K146 software enablement
 
 # Supported Software Overview
 
-## [PX4](http://PX4.io)
+## [PX4 Autopilot](http://PX4.io)
 
 ![](../.gitbook/assets/image.png)
 
 UCANS32K146 board is a build target for PX4.io. PX4 is an open source flight control software for drones and other unmanned vehicles. While UCANS32K146 is not a flight controller, it can leverage the PX4 infrastructure to provide communications and portability of peripheral drivers, leading to enablement of a distributed vehicle architecture. For example drivers for secure element SE050 would be identical on the FMU and CAN nodes. PX4 makes use of a managed and maintained version of NuttX RTOS.
 
-## [NuttX](https://nuttx.apache.org)
+## [Apache NuttX](https://nuttx.apache.org)
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
