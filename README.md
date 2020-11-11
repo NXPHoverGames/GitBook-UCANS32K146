@@ -65,7 +65,7 @@ More information is [available on the NXP website](https://www.nxp.com/design/de
 
 ## Hardware designs and example software
 
-The hardware schematics and board layout for UCANS32K146 [are available on this GitBook](hardware/designs.md) and [on the NXP website](https://www.nxp.com/design/development-boards/automotive-development-platforms/s32k-mcu-platforms/can-fd-development-system-for-drones-rovers-and-mobile-robotics:UCANS32K146#t990). We encourage you to create your own designs based on our UCANS32K146 board! 
+The hardware schematics and board layout for UCANS32K146 [are available on this GitBook](hardware/schematics-and-designs.md) and [on the NXP website](https://www.nxp.com/design/development-boards/automotive-development-platforms/s32k-mcu-platforms/can-fd-development-system-for-drones-rovers-and-mobile-robotics:UCANS32K146#t990). We encourage you to create your own designs based on our UCANS32K146 board! 
 
 We do not only provide hardware designs, there is also plenty of example software available. There are multiple options to use the UAVCAN protocol. We have also worked with the Apache NuttX and PX4 Autopilot communities to enable their open source software projects on the UCANS32K146. 
 

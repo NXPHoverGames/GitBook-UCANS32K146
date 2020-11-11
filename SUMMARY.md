@@ -2,16 +2,16 @@
 
 * [RDDRONE-UCANS32K146](README.md)
 * [Disclaimer](disclaimer.md)
-* [Getting started](untitled.md)
-* [Supported software overview](supported-software-overview.md)
+* [Getting started](getting-started.md)
+* [Available software](available-software.md)
 
 ## Hardware Reference <a id="hardware"></a>
 
-* [Schematics and designs](hardware/designs.md)
+* [Schematics and designs](hardware/schematics-and-designs.md)
 
 ## S32K1 SDK
 
-* [S32K1 SDK with libuavcan](s32k1-sdk/sdk-example-with-uavcan.md)
+* [S32K1 SDK with libuavcan](s32k1-sdk/sdk-example-with-libuavcan.md)
 * [UAVCAN quick start demo](s32k1-sdk/quick-start-demo.md)
 
 ## Apache NuttX
@@ -25,7 +25,7 @@
 
 ## PX4 Autopilot
 
-* [About PX4 Autopilot](px4-autopilot/about-px4.md)
+* [About PX4 Autopilot](px4-autopilot/about-px4-autopilot.md)
 * [Building and flashing PX4](px4-autopilot/building-and-flashing-px4.md)
 
 ## External Sources
