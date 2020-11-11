@@ -10,7 +10,13 @@ description: >-
 
 NuttX uses a similar configuration system as the Linux kernel. There are Kconfig files that define the different options and you can generate a configuration file that can be used by the build system with a Kconfig frontend.
 
-NuttX provide their own fork/back-up of the Kconfig-frontends, to make sure that they always have access to a compatible version. It is still hosted on their old BitBucket repository. 
+NuttX provide their own fork/back-up of the Kconfig-frontends, to make sure that they always have access to a compatible version. It is still hosted on their old BitBucket repository.
+
+{% hint style="success" %}
+In Ubuntu 20.04 it is possible to directly install the kconfig-frontends package from the package repositories. You only need to run `apt install kconfig-frontends`. 
+
+You can then skip most of the instructions below.
+{% endhint %}
 
 First, make sure you have gperf installed:
 
@@ -49,10 +55,6 @@ sudo make install
 ```
 
 Once you have a "default" configuration in place \(we will get to that in a second\), you can edit the configuration with `make menuconfig` or `make qconfig`. Both tools have their pros and cons, just give them a try and see which one you like the most!
-
-{% hint style="success" %}
-In Ubuntu 20.04 it is possible to directly install the kconfig-frontends package from the package repositories. You only need to run `apt install kconfig-frontends`.
-{% endhint %}
 
 ## Start with a canned configuration
 

@@ -16,7 +16,7 @@
 
 ## Apache NuttX
 
-* [About NuttX](apache-nuttx/untitled.md)
+* [About Apache NuttX](apache-nuttx/about-apache-nuttx.md)
 * [Download NuttX](apache-nuttx/download-nuttx.md)
 * [Building and flashing NuttX](apache-nuttx/building-and-flashing-nuttx.md)
 * [NuttX configuration](apache-nuttx/nuttx-configuration.md)
@@ -25,9 +25,8 @@
 
 ## PX4 Autopilot
 
-* [About PX4](px4-autopilot/about-px4.md)
-* [Building the PX4 firmware](px4-autopilot/building-the-px4-firmware.md)
-* [Flashing PX4 firmware](px4-autopilot/px4-toolchain-and-flashing-the-board.md)
+* [About PX4 Autopilot](px4-autopilot/about-px4.md)
+* [Building and flashing PX4](px4-autopilot/building-and-flashing-px4.md)
 
 ## External Sources
 
@@ -36,5 +35,5 @@
 * [Apache NuttX GitHub](https://github.com/apache/incubator-nuttx)
 * [PX4 User Guide](https://docs.px4.io/master/en/)
 * [PX4 Development Guide](https://dev.px4.io/master/en/index.html)
-* [PX4 GitHub](https://github.com/PX4/Firmware)
+* [PX4 GitHub](https://github.com/PX4/PX4-Autopilot)
 
