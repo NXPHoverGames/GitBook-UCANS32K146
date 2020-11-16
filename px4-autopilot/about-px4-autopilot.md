@@ -16,6 +16,17 @@ description: >-
 PX4 Autopilot for UCANS32K146 is build on top of NuttX. Therefore, most of the information in the "[Apache NuttX](../apache-nuttx/about-apache-nuttx.md#px-4-nuttx-or-bare-metal)" section also applies to PX4! Besides flight control and autopilot software, it also contains additional tools, drivers and middleware.
 {% endhint %}
 
+
+
+## Why use PX4 Autopilot on UCANS32K146?
+
+> The UCAN board is not an Autopilot, so why consider using PX4 on it? There are a number of reasons for this:
+>
+> * Building a PX4 distributed architecture. The same peripheral drivers running on an FMU can be reused here on the UCAN board, with only the CAN bus  \(UAVCAN\) separating them. This means a common codebase is developed and used for something like a sensor or actuator.
+> * PX4 carefully maintains and updates their branch of NuttX, and regularly backports to mainstream NuttX. This means PX4/Nuttx is more stable and there are minimal "surprises" due to untested code making it's way into the OS. 
+> * PX4 includes and tests additional tools and methods within their distribution. i.e 'top'
+> * Connection with the PX4.io community ecosystem through slack, discourse and regular standards bodies meetings.
+
 ## PX4 support for UCANS32K146
 
 The PX4 development team provides basic support for UCANS32K146. A board configuration is available from which [a binary can easily be build](building-and-flashing-px4.md). Because PX4 is build on top of NuttX, it supports most of the [features that were enabled in the NuttX build](../apache-nuttx/about-apache-nuttx.md#nuttx-support-for-ucans-32-k146) for UCANS32K146.
