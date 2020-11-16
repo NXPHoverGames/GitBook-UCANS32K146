@@ -27,6 +27,7 @@
 
 * [About PX4 Autopilot](px4-autopilot/about-px4-autopilot.md)
 * [Building and flashing PX4](px4-autopilot/building-and-flashing-px4.md)
+* [PX4 examples to try](px4-autopilot/px4-examples-to-try.md)
 
 ## External Sources
 
