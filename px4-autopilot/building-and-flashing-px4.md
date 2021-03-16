@@ -22,6 +22,10 @@ Change  your working directory \(`cd` command\) to the PX4-Autopilot Git reposit
 
 ### Bootloader
 
+{% hint style="info" %}
+You only need to build and flash the bootloader once. If you rebuild/reflash PX4, you can skip all of the bootloader steps.
+{% endhint %}
+
 To build the bootloader, run:
 
 ```bash
