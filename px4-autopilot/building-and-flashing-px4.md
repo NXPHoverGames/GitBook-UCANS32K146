@@ -18,13 +18,27 @@ git clone https://github.com/PX4/PX4-Autopilot
 
 ## Building PX4 Autopilot for UCANS32K146
 
-Change  your working directory \(`cd` command\) to the PX4-Autopilot Git repository that you just cloned. You can build a binary for the UCANS32K146 board with the following command:
+Change  your working directory \(`cd` command\) to the PX4-Autopilot Git repository that you just cloned. Next we will build the bootloader and firmware for our UCAN board.
+
+### Bootloader
+
+To build the bootloader, run:
 
 ```bash
-make nxp_ucans32k146_default
+make nxp_ucans32k146_canbootloader
 ```
 
-The .bin file for flashing the firmware will be stored in `build/nxp_ucans32k146_default/`. The file you're looking for is `nxp_ucans32k146.bin`. You can leave the file there or copy it to another location for flashing the board in the next section.
+The binary file will be located at `PX4-Autopilot/build/nxp_ucans32k146_canbootloader/nxp_ucans32k146.bin`. Keep this file handy for flashing later.
+
+### PX4 Firmware
+
+Next, build the firmware by running:
+
+```bash
+make nxp_ucans32k146
+```
+
+The .bin file for flashing the firmware will be stored in `build/nxp_ucans32k146_default/`. The file you're looking for is `34-0.1.{commit}.uavcan.bin`. You can leave the file there or copy it to another location for flashing the board in the next section.
 
 ## Flashing PX4 Autopilot to the UCANS32K146 board
 
@@ -60,13 +74,23 @@ Finally you have to specify the target interface speed. It is recommended to use
 1000
 ```
 
-Now flash the binary with:
+Now flash the bootloader with:
 
 ```bash
-loadbin nxp_ucans32k146.bin 0
+loadbin /path/to/nxp_ucans32k146.bin 0x0
 ```
 
-The binary will be programmed and this process will also be verified. It should then mention if everything went OK. You can quit the J-Link tools with:
+The binary will be programmed and this process will also be verified. It should then mention if everything went OK. 
+
+Next, flash the PX4 firmware binary with:
+
+```bash
+loadbin /path/to/34-0.1.{commit}.uavcan.bin 0x6000
+```
+
+And you're good to go.
+
+You can quit the J-Link tools with:
 
 ```bash
 q
