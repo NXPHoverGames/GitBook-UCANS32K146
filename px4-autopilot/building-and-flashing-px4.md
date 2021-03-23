@@ -26,6 +26,14 @@ Change  your working directory \(`cd` command\) to the PX4-Autopilot Git reposit
 You only need to build and flash the bootloader once. If you rebuild/reflash PX4, you can skip all of the bootloader steps.
 {% endhint %}
 
+#### Downloading the Bootloader
+
+If you don't want to build the bootloader, you can download it by clicking the file below.
+
+{% file src="../.gitbook/assets/nxp\_ucans32k146.bin" caption="PX4 Bootloader for UCANS32K146" %}
+
+#### Building the Bootloader
+
 To build the bootloader, run:
 
 ```bash
