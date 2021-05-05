@@ -30,7 +30,7 @@ You only need to build and flash the bootloader once. If you rebuild/reflash PX4
 
 If you don't want to build the bootloader, you can download it by clicking the file below.
 
-{% file src="../.gitbook/assets/nxp\_ucans32k146 \(1\).bin" caption="PX4 Bootloader for UCANS32K146" %}
+{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/nxp\_ucans32k146.bin" caption="UCANS32K146 PX4 Bootloader" %}
 
 ### Building the Bootloader
 
@@ -52,9 +52,11 @@ make nxp_ucans32k146
 
 The .bin file for flashing the firmware will be stored in `build/nxp_ucans32k146_default/deploy`. The file you're looking for is `34.bin`. You can leave the file there or copy it to another location for flashing the board in the next section.
 
-A prebuilt version of PX4 for UCANS32K146 is linked below:
+A prebuilt version of PX4 for UCANS32K146 is linked below. You should download the file prefixed with `34-0.1`:
 
-{% file src="../.gitbook/assets/34-0.1.ac6e7a1c.uavcan.bin" caption="UAVCAN PX4 binary" %}
+{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/" %}
+
+
 
 ## Flashing PX4 Autopilot to the UCANS32K146 board
 
