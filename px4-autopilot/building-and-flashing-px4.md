@@ -30,11 +30,9 @@ You only need to build and flash the bootloader once. If you rebuild/reflash PX4
 
 If you don't want to build the bootloader, you can download it by clicking the file below.
 
-{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/nxp\_ucans32k146.bin" caption="UCANS32K146 PX4 Bootloader" %}
+{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/nxp\_ucans32k146.bin" caption="UCANS32K146 PX4 Bootloader \(Latest build\)" %}
 
-### Building the Bootloader
-
-To build the bootloader, run:
+Alternatively, run the following command to build the bootloader:
 
 ```bash
 make nxp_ucans32k146_canbootloader
@@ -44,19 +42,17 @@ The binary file will be located at `PX4-Autopilot/build/nxp_ucans32k146_canbootl
 
 ### PX4 Firmware
 
-Next, build the firmware by running:
+A prebuilt version of PX4 for UCANS32K146 is linked below. This is the latest build of PX4 master.
+
+{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/34-0.1.\*.uavcan.bin/\*zip\*/nxp\_ucans32k146\_default.zip" caption="UAVCAN PX4 firmware binary \(Latest build\)" %}
+
+Alternatively, you can build the firmware by running the following command in the root of the PX4-Autopilot repository:
 
 ```bash
 make nxp_ucans32k146
 ```
 
 The .bin file for flashing the firmware will be stored in `build/nxp_ucans32k146_default/deploy`. The file you're looking for is `34.bin`. You can leave the file there or copy it to another location for flashing the board in the next section.
-
-A prebuilt version of PX4 for UCANS32K146 is linked below. You should download the file prefixed with `34-0.1`:
-
-{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/" %}
-
-
 
 ## Flashing PX4 Autopilot to the UCANS32K146 board
 
@@ -104,7 +100,7 @@ Next, flash the PX4 firmware binary with:
 
 ```bash
 # If using pre-built binary
-loadbin /path/to/34-0.1.ac6e7a1c.uavcan.bin 0x6000
+loadbin /path/to/34-0.1.{commit}.uavcan.bin 0x6000
 # If using self-built binary
 loadbin /path/to/34.bin 0x6000
 ```
