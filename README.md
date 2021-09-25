@@ -1,17 +1,18 @@
 ---
 description: >-
-  This GitBook provides the technical details of the NXP RDDRONE-UCANS32K146
-  UAVCAN node development board, as well as reference software and examples.
+  This GitBook provides the technical details of the NXP RDDRONE-UCANS32K1 famly
+  of  CAN-FD and CAN-SIC boards with UAVCAN protocol support, as well as
+  reference software and examples.
 ---
 
-# RDDRONE-UCANS32K146
+# RDDRONE-UCANS32K1 node boards
 
 {% hint style="danger" %}
 **This GitBook is still a work in progress!**
 {% endhint %}
 
 {% hint style="success" %}
-See also the [NXP Mobile Robotics Community ](https://community.nxp.com/community/mobilerobotics)for questions and answers about all our mobile robotics reference designs. There is also [thread for questions about UCANS32K146](https://community.nxp.com/thread/534837).
+See also the [NXP Mobile Robotics Community ](https://community.nxp.com/community/mobilerobotics)for questions and answers about all our mobile robotics reference designs. There is also [thread for questions about UCANS32K148 and UCANS32K1SIC](https://community.nxp.com/thread/534837) .
 {% endhint %}
 
 ![](.gitbook/assets/ucans32k146_3d_render.png)
@@ -25,12 +26,17 @@ Also have a look at some of the other **NXP GitBooks**:
 - [NXP Cup](https://nxp.gitbook.io/nxp-cup-hardware-reference-alamak/)
 {% endhint %}
 
-## What is UCANS32K146?
+## What are the UCANS32K1 node boards?
 
-The RDDRONE-UCANS32K146 development board is a \(UAV\)CAN node reference design for drones, rovers and other small \(autonomous\) vehicles. It is designed to act as a bridge between a CAN bus \(with [UAVCAN](https://uavcan.org/)\) and I2C, SPI, UART, GPIO or any other pin function of the [S32K146 MCU](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/s32k-automotive-mcus/s32k1-microcontrollers-for-general-purpose:S32K) \(80 MHz ARM Cortex-M4F, ASIL-B compliant\). This allows sensors, actuators and other peripherals to be controlled by other devices on the same CAN bus, such as the [RDDRONE-FMUK66](https://www.nxp.com/design/designs/px4-robotic-drone-fmu-rddrone-fmuk66:RDDRONE-FMUK66) flight management unit reference design.
+UCANS32K146 and UCANS32K1SIC development boards are general purpose CAN node reference designs. They can be used for any purpose, however specific software has been provided for drones, rovers and other small \(autonomous\) vehicles. This software allows it to act as a bridge between a CAN bus \(with [UAVCAN](https://uavcan.org/)\) and I2C, SPI, UART, GPIO or any other pin function of the [S32K146 MCU](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/s32k-automotive-mcus/s32k1-microcontrollers-for-general-purpose:S32K) \(80 MHz ARM Cortex-M4F, ASIL-B compliant\). This allows sensors, actuators and other peripherals to be controlled by other devices on the same CAN bus, such as the [RDDRONE-FMUK66](https://www.nxp.com/design/designs/px4-robotic-drone-fmu-rddrone-fmuk66:RDDRONE-FMUK66) flight management unit reference design.
 
 {% hint style="success" %}
 The relevant part numbers are:
+
+* KIT-UCANS32K1SIC \(complete development kit with **two** UCANS32KSIC boards, a debugger and an adapter board - everything you need to get started!\)
+* UCANS32K1SIC \(a single UCANS32K146 board, CAN cable and termination network board\)
+
+
 
 * [KIT-UCANS32K146](https://www.nxp.com/part/KIT-UCANS32K146#/) \(complete development kit with **two** UCANS32K146 boards, a debugger and an adapter board - everything you need to get started!\)
 * [UCANS32K146-01](https://www.nxp.com/part/UCANS32K146-01#/)  \(a single UCANS32K146 board, without additional debugger\)
@@ -55,11 +61,12 @@ Possible use cases are:
 ### Board specifications
 
 * [NXP S32K146 Automotive MCU](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/s32k-automotive-mcus/s32k1-microcontrollers-for-general-purpose:S32K) \(80 MHz ARM Cortex-M4F, ASIL-B compliant\)
-* Dual [NXP TJA1044 CAN transceivers](https://www.nxp.com/products/interfaces/can-transceivers/can-with-flexible-data-rate/high-speed-can-transceiver-with-standby-mode-mantis-family:TJA1044) \(with dual [4-pin JST-GH connectors](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf)\)
+* Dual [NXP TJA1044 CAN transceivers](https://www.nxp.com/products/interfaces/can-transceivers/can-with-flexible-data-rate/high-speed-can-transceiver-with-standby-mode-mantis-family:TJA1044) 
+  * OR **Dual NXP TJA1463 CAN-SIC transceivers** \(with dual [4-pin JST-GH connectors](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf)\)
 * [NXP EdgeLock SE050 secure element](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family-enhanced-iot-security-with-maximum-flexibility:SE050) with NFC interface \(with external antenna, not included\)
-* RC-PWM pin header with optional external power input
+* One \(UCANK1S32K146\) or Two \(UCANS32KSIC\) RC-PWM  pin header with optional external power input
 * Through-hole solder pads \(for 0.100" pin headers\) that expose SPI, I2C and UART. Can also be remapped to other pin functions \(GPIO, ADC, timer, ...\)
-* 5-12V power input; the board can be powered from the 4-pin JST-GH CAN connectors or the 2-pin power input header. There is an optional power input for the RC-PWM header as well.
+* 5V power input; the board can be powered from the 4-pin JST-GH CAN connectors or the 2-pin power input header. There is an optional power input for the RC-PWM header as well specifically for 3 pin connected PWM devices such as high power RC servos.
 
 More information is [available on the NXP website](https://www.nxp.com/design/development-boards/automotive-development-platforms/s32k-mcu-platforms/can-fd-development-system-for-drones-rovers-and-mobile-robotics:UCANS32K146#t990).
 

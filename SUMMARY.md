@@ -1,6 +1,6 @@
 # Table of contents
 
-* [RDDRONE-UCANS32K146](README.md)
+* [RDDRONE-UCANS32K1 node boards](README.md)
 * [Disclaimer](disclaimer.md)
 * [PostCard quick reference](postcard-quick-reference.md)
 * [Getting started](getting-started.md)
