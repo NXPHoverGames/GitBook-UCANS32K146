@@ -5,7 +5,7 @@ description: >-
   reference software and examples.
 ---
 
-# RDDRONE-UCANS32K1 node boards
+# UCANS32K1 family CAN node boards
 
 {% hint style="danger" %}
 **This GitBook is still a work in progress!**
