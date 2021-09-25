@@ -7,6 +7,12 @@
 * [Available software](available-software.md)
 * [Differences between UCANS32K146-01 and UCANS32K1SIC, UCANS32K146B](differences-between-ucans32k146-01-and-ucans32k1sic-ucans32k146b.md)
 
+## UCANS32K1SIC demo application
+
+* [Demo: UCANS32K1SIC Introduction](ucans32k1sic-demo-application/demo-ucans32k1sic-introduction.md)
+* [DEMO: UCANS32K1SIC Hardware setup](ucans32k1sic-demo-application/demo-ucans32k1sic-hardware-setup.md)
+* [DEMO: UCANS321SIC running the demo software](ucans32k1sic-demo-application/demo-ucans321sic-running-the-demo-software.md)
+
 ## Hardware Reference <a id="hardware"></a>
 
 * [Schematics and designs](hardware/schematics-and-designs.md)
