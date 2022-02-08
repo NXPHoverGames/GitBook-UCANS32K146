@@ -6,9 +6,9 @@ description: How to build and flash PX4 Autopilot for NXP UCANS32K146.
 
 ## Prerequisites
 
-You need a build environment that can build PX4 Autopilot. You can generally use the [same environment as with Apache NuttX](../apache-nuttx/building-and-flashing-nuttx.md#toolchain), but you will need to install some additional packages. To get started, you can use the [HoverGames virtual machine](https://nxp.gitbook.io/hovergames/developerguide/tools), or install your own Linux \(virtual\) machine. When you have a basic Linux environment, you only need to [install the PX4 toolchain](https://nxp.gitbook.io/hovergames/developerguide/tools/toolchain-installation) to continue. 
+You need a build environment that can build PX4 Autopilot. You can generally use the [same environment as with Apache NuttX](../apache-nuttx/building-and-flashing-nuttx.md#toolchain), but you will need to install some additional packages. To get started, you can use the [HoverGames virtual machine](https://nxp.gitbook.io/hovergames/developerguide/tools), or install your own Linux (virtual) machine. When you have a basic Linux environment, you only need to [install the PX4 toolchain](https://nxp.gitbook.io/hovergames/developerguide/tools/toolchain-installation) to continue.&#x20;
 
-More information is also available in the [PX4 Developer Guide](https://dev.px4.io/master/en/setup/getting_started.html).
+More information is also available in the [PX4 Developer Guide](https://dev.px4.io/master/en/setup/getting\_started.html).
 
 If you have not yet cloned the PX4 source code as part of the toolchain installation, you should do so now:
 
@@ -18,7 +18,7 @@ git clone https://github.com/PX4/PX4-Autopilot
 
 ## Building PX4 Autopilot for UCANS32K146
 
-Change  your working directory \(`cd` command\) to the PX4-Autopilot Git repository that you just cloned. Next we will build the bootloader and firmware for our UCAN board.
+Change  your working directory (`cd` command) to the PX4-Autopilot Git repository that you just cloned. Next we will build the bootloader and firmware for our UCAN board.
 
 ### Bootloader
 
@@ -30,7 +30,9 @@ You only need to build and flash the bootloader once. If you rebuild/reflash PX4
 
 If you don't want to build the bootloader, you can download it by clicking the file below.
 
-{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/nxp\_ucans32k146.bin" caption="UCANS32K146 PX4 Bootloader \(Latest build\)" %}
+{% embed url="http://ci.px4.io/job/PX4_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp_ucans32k146_default/nxp_ucans32k146.bin" %}
+UCANS32K146 PX4 Bootloader (Latest build)
+{% endembed %}
 
 Alternatively, run the following command to build the bootloader:
 
@@ -44,7 +46,9 @@ The binary file will be located at `PX4-Autopilot/build/nxp_ucans32k146_canbootl
 
 A prebuilt version of PX4 for UCANS32K146 is linked below. This is the latest build of PX4 master.
 
-{% embed url="http://ci.px4.io/job/PX4\_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp\_ucans32k146\_default/34-0.1.\*.uavcan.bin/\*zip\*/nxp\_ucans32k146\_default.zip" caption="UAVCAN PX4 firmware binary \(Latest build\)" %}
+{% embed url="http://ci.px4.io/job/PX4_misc/job/Firmware-compile/job/master/lastSuccessfulBuild/artifact/build/nxp_ucans32k146_default/34-0.1.*.uavcan.bin/*zip*/nxp_ucans32k146_default.zip" %}
+UAVCAN PX4 firmware binary (Latest build)
+{% endembed %}
 
 Alternatively, you can build the firmware by running the following command in the root of the PX4-Autopilot repository:
 
@@ -94,7 +98,7 @@ Now flash the bootloader with:
 loadbin /path/to/nxp_ucans32k146.bin 0x0
 ```
 
-The binary will be programmed and this process will also be verified. It should then mention if everything went OK. 
+The binary will be programmed and this process will also be verified. It should then mention if everything went OK.&#x20;
 
 Next, flash the PX4 firmware binary with:
 
@@ -113,9 +117,25 @@ You can quit the J-Link tools with:
 q
 ```
 
-You may need to power cycle the device afterwards. The debug console should now be available on LPUART1 \(115200 baud\) - which is also accessible on the debugger breakout board.
+You may need to power cycle the device afterwards. The debug console should now be available on LPUART1 (115200 baud) - which is also accessible on the debugger breakout board.
+
+## Adding CAN tools to PX4
+
+If you want to add the `cantools` apps to PX4 (`candump` and `cansend` applications), you will need to perform an extra step.&#x20;
+
+Here are the steps:
+
+1. From the root of your PX4 directory, run `make nxp_ucans32k146 menuconfig`
+2. Navigate to `Application Configuration --->`
+3. Navigate to `CAN Utilities --->`
+4. Enable all options except `[ ] SocketCAN slcan tool`
+
+It should look like this:
+
+![](<../.gitbook/assets/image (18).png>)
+
+Once you've finished this, exit the menuconfig and save, then rebuild PX4 for the UCANS32K146 as you did above.
 
 ## More information
 
 The PX4-build for UCANS32K146 is in an early state and not all features may be available. More information about PX4 Autopilot is available in their [User Guide](http://docs.px4.io/master/en/) and [Developer Guide](https://dev.px4.io/master/en/). Their software development is managed on [GitHub](https://github.com/PX4/PX4-Autopilot). There are also various [support channels](https://dev.px4.io/master/en/contribute/support.html) available.
-
