@@ -16,6 +16,23 @@ If you have not yet cloned the PX4 source code as part of the toolchain installa
 git clone https://github.com/PX4/PX4-Autopilot
 ```
 
+## Adding CAN utilities to PX4
+
+If you want to add the `can-utils` apps to PX4 (`candump` and `cansend` applications), you will need to perform an extra step.&#x20;
+
+Here are the steps:
+
+1. From the root of your PX4 directory, run `make nxp_ucans32k146 menuconfig`
+2. Navigate to `Application Configuration --->`
+3. Navigate to `CAN Utilities --->`
+4. Enable all options except `[ ] SocketCAN slcan tool`
+
+It should look like this:
+
+![](<../.gitbook/assets/image (18).png>)
+
+Once you've finished this, exit the menuconfig and save, then continue to build PX4 below.
+
 ## Building PX4 Autopilot for UCANS32K146
 
 Change  your working directory (`cd` command) to the PX4-Autopilot Git repository that you just cloned. Next we will build the bootloader and firmware for our UCAN board.
@@ -119,22 +136,7 @@ q
 
 You may need to power cycle the device afterwards. The debug console should now be available on LPUART1 (115200 baud) - which is also accessible on the debugger breakout board.
 
-## Adding CAN tools to PX4
 
-If you want to add the `cantools` apps to PX4 (`candump` and `cansend` applications), you will need to perform an extra step.&#x20;
-
-Here are the steps:
-
-1. From the root of your PX4 directory, run `make nxp_ucans32k146 menuconfig`
-2. Navigate to `Application Configuration --->`
-3. Navigate to `CAN Utilities --->`
-4. Enable all options except `[ ] SocketCAN slcan tool`
-
-It should look like this:
-
-![](<../.gitbook/assets/image (18).png>)
-
-Once you've finished this, exit the menuconfig and save, then rebuild PX4 for the UCANS32K146 as you did above.
 
 ## More information
 
