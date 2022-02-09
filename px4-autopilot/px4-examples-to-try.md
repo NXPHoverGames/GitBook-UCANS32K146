@@ -30,3 +30,16 @@ nsh> ver git
 ```
 
 As you can see there are also a number of other builtin apps ready to test servo's, I2C devices, SPI devices, and even a GPS when attached.
+
+## Testing CAN between two UCANS32K146 boards using PX4 CAN utilities
+
+If you followed the instructions on the previous page to enable CAN utilities in PX4, then follow the steps below to test CAN communication between the boards.
+
+1. Connect two UCANS32K146 boards with the included CAN cable (yellow and white twisted pair with red and black power lines)
+2. Connect a termination resistor to each board on the same bus
+3. Boot up each board and connect to them using the included debuggers
+4. On each board, run `ifup can0` if using the CAN1 bus, or `ifup can1` if using the CAN2 bus
+5. On one board, run `candump can0` or `candump can1` depending on what bus you are using
+6. On the other board, run `cansend can0 123#deadbeef` to test CAN traffic. You should see the CAN message show up on the receiving board.
+7. You have successfully tested CAN communication on UCANS32K146.
+
