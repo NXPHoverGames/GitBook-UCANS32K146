@@ -38,7 +38,7 @@ Also have a look at some of the other **NXP GitBooks**:
 
 ## What are the UCANS32K1 node boards?
 
-UCANS32K146 and UCANS32K1SIC development boards are general purpose CAN node reference designs. They can be used for any purpose, however specific software has been provided for drones, rovers and other small (autonomous) vehicles. This software allows it to act as a bridge between a CAN bus (with [UAVCAN](https://uavcan.org)) and I2C, SPI, UART, GPIO or any other pin function of the [S32K146 MCU](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/s32k-automotive-mcus/s32k1-microcontrollers-for-general-purpose:S32K) (80 MHz ARM Cortex-M4F, ASIL-B compliant). This allows sensors, actuators and other peripherals to be controlled by other devices on the same CAN bus, such as the [RDDRONE-FMUK66](https://www.nxp.com/design/designs/px4-robotic-drone-fmu-rddrone-fmuk66:RDDRONE-FMUK66) flight management unit reference design.
+UCANS32K146 and UCANS32K1SIC development boards are general purpose CAN node reference designs. They can be used for any purpose, however specific software has been provided for drones, rovers and other small (autonomous) vehicles. This software allows it to act as a bridge between a CAN bus (with [UAVCAN](https://uavcan.org/)) and I2C, SPI, UART, GPIO or any other pin function of the [S32K146 MCU](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/s32k-automotive-mcus/s32k1-microcontrollers-for-general-purpose:S32K) (80 MHz ARM Cortex-M4F, ASIL-B compliant). This allows sensors, actuators and other peripherals to be controlled by other devices on the same CAN bus, such as the [RDDRONE-FMUK66](https://www.nxp.com/design/designs/px4-robotic-drone-fmu-rddrone-fmuk66:RDDRONE-FMUK66) flight management unit reference design.
 
 {% hint style="success" %}
 The relevant part numbers are:
@@ -87,7 +87,7 @@ Additional designs and example software might be made available in the future.
 
 ## Contribute to this GitBook
 
-We would really like to receive your feedback regarding this GitBook. It is synchronized to a [Git repository on GitHub](https://github.com/NXPHoverGames/GitBook-UCANS32K146), so you can just open an issue. If you want to contribute you can also open a pull request. The pages are written using an extended version of [Markdown](https://www.markdownguide.org), so it should be pretty straightforward to add sections or even complete pages!
+We would really like to receive your feedback regarding this GitBook. It is synchronized to a [Git repository on GitHub](https://github.com/NXPHoverGames/GitBook-UCANS32K146), so you can just open an issue. If you want to contribute you can also open a pull request. The pages are written using an extended version of [Markdown](https://www.markdownguide.org/), so it should be pretty straightforward to add sections or even complete pages!
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)\
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

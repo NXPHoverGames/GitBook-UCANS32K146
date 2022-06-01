@@ -8,7 +8,7 @@ description: >-
 
 ## What is NuttX?
 
-> NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards. Additional standard APIs from Unix and other common RTOS’s (such as VxWorks) are adopted for functionality not available under these standards, or for functionality that is not appropriate for deeply-embedded environments (such as fork()). -- _****_ [_**Apache NuttX website**_](https://nuttx.apache.org)_****_
+> NuttX is a real-time operating system (RTOS) with an emphasis on standards compliance and small footprint. Scalable from 8-bit to 32-bit microcontroller environments, the primary governing standards in NuttX are Posix and ANSI standards. Additional standard APIs from Unix and other common RTOS’s (such as VxWorks) are adopted for functionality not available under these standards, or for functionality that is not appropriate for deeply-embedded environments (such as fork()). -- _****_ [_**Apache NuttX website**_](https://nuttx.apache.org/)_****_
 
 NuttX was created by Gregory Nutt and he has been one of the main developers for a very long time. \
 In 2019 the RTOS was accepted as an incubating project under the Apache Software Foundation, which means it is currently undergoing the process to become an official ASF project. There is now a management committee in place that oversees the ongoing development of NuttX.
@@ -39,7 +39,7 @@ There is also a third option. NXP offers a "bare-metal" SDK for the S32K1xx fami
 
 Documentation for NuttX is available on their website:
 
-* [https://nuttx.apache.org/](https://nuttx.apache.org)
+* [https://nuttx.apache.org/](https://nuttx.apache.org/)
 * [https://nuttx.apache.org/docs/latest/](https://nuttx.apache.org/docs/latest/)
 * [https://cwiki.apache.org/confluence/display/NUTTX/Documentation](https://cwiki.apache.org/confluence/display/NUTTX/Documentation)
 

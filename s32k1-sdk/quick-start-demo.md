@@ -55,5 +55,5 @@ This pictures was taken with an earlier version of the UCANS32K146 board, there 
 
 With an oscilloscope or logic analyzer you can view the frames being transmitted at 4Mbit/s data phase speed and at 1Mbit/s in nominal phase:
 
-![](../.gitbook/assets/canfd\_oscilloscope.png)
+![](../.gitbook/assets/CANFD\_oscilloscope.png)
 
